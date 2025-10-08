@@ -370,7 +370,6 @@
             border-radius: 50%;
             background: var(--accent-color);
         }
-        /* SOLUCIÓN PARA MÓVIL - EVITAR DESBORDAMIENTO */
 body {
     overflow-x: hidden;
     max-width: 100%;
@@ -395,6 +394,29 @@ body {
     h1, h2, h3, h4, h5, p {
         word-wrap: break-word;
         overflow-wrap: break-word;
+    }
+        body {
+        font-size: 0.9em; /* Reduce todo el texto un 10% */
+    }
+    
+    .compact-header h1 {
+        font-size: 1.5em; /* Ajusta específicamente el título */
+    }
+    
+    h2 {
+        font-size: 1.5em; /* Reduce títulos h2 */
+    }
+    
+    h3 {
+        font-size: 1.2em; /* Reduce títulos h3 */
+    }
+    
+    h4 {
+        font-size: 1.1em; /* Reduce títulos h4 */
+    }
+    
+    h5 {
+        font-size: 1em; /* Reduce títulos h5 si los tienes */
     }
 }
     </style>
