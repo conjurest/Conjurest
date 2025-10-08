@@ -370,6 +370,33 @@
             border-radius: 50%;
             background: var(--accent-color);
         }
+        /* SOLUCIÓN PARA MÓVIL - EVITAR DESBORDAMIENTO */
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.main-container, .content, section {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .main-container, .content, section {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    h1, h2, h3, h4, h5, p {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+}
     </style>
 </head>
 <body>
