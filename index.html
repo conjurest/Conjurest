@@ -306,7 +306,37 @@
                 font-size: 1.7em;
             }
         }
+
+        .table-container {
+    overflow-x: auto;
+    max-width: 100%;
+    margin: 15px 0;
+    border: 1px solid var(--purple-light);
+    border-radius: 5px;
+}
+
+table {
+    min-width: 600px;
+    width: 100%;
+}
         @media (max-width: 768px) {
+.table-container {
+        margin: 15px -10px;
+        max-width: calc(100% + 20px);
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+    }
+    
+    table {
+        min-width: 600px;
+        font-size: 0.85em;
+    }
+    
+    th, td {
+        padding: 8px 10px;
+    }
+}         
     body {
         overflow-x: hidden;
         font-size: 0.9em;
